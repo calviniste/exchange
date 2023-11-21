@@ -5,6 +5,7 @@ import Book from "./Book"
 import Menu from "./Menu"
 import About from "./About"
 import Services from "../components/Service"
+import Faq from "../components/Faq"
 
 const Home = () => {
     return (
@@ -17,7 +18,7 @@ const Home = () => {
  <div id="service">
                  <Services />
             </div>
-           
+           <Faq/>
             
 
             <Footer />
