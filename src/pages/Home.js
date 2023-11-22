@@ -10,16 +10,19 @@ import Faq from "../components/Faq"
 const Home = () => {
     return (
         <div>
-            <Header/>
+            <Header />
             <div id="about">
-            <About />
+                <About />
             </div>
-          
- <div id="service">
-                 <Services />
+
+            <div id="service">
+                <Services />
             </div>
-           <Faq/>
-            
+            <div id="faq">
+                <Faq />
+            </div>
+
+
 
             <Footer />
         </div>

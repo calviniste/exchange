@@ -48,14 +48,27 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        How long will it take to get a new website?
+                                        How to order?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                        <p>Your country/city </p>
+                                        <p>    Your name</p>
+                                        <p> Required quantity</p>
+                                        <p>Delivery address details</p>
+                                        <p> E-mail</p>
+                                        <p className="mb-4"> Contact number (optional)</p>
+                                        <p >
+
+                                            We use three delivery services </p>
+                                        <p>DHL</p>
+                                        <p>USPS</p>
+                                        <p>FedEx</p>
+
+                                        <p>You decide which service you want based on your location. All packages come with tracking numbers that you can use to track and trace your packages</p>
+
                                     </div>
                                 </div>
                             </div>
@@ -63,92 +76,68 @@ const Faq = () => {
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Do you only create HTML websites?
+                                        To order
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
+                                        <ol>
+                                            <li>
+                                                indicate your currency
+                                            </li>
+                                            <li>indicate How much</li>
+                                            <li>
+                                                indicate the delivery details
+                                            </li>
+                                            <li>
+                                                indicate the preferred delivery courier
+                                            </li>
+                                            <li>
+                                                indicate the payment method
+                                            </li>
+                                        </ol>
+                                        <p>Payment methods ✅</p>
+                                        <ul>
+                                            <li>Crypto</li>
+                                            <li>PayPal</li>
+                                            <li>Western Union</li>
+                                        </ul>
+                                        <p>USD Price list ✅</p>
+                                        <ul>
+                                            <li>$100,000 cost $25,000</li>
+                                            <li>  $50,000 cost $12,000</li>
+                                            <li> $10,000 costs $1,500</li>
+                                            <li> $5,000 costs $700</li>
+                                            <li> $2,000 cost $300</li>
+                                        </ul>
+
+                                        <p>Available in 10s 20s 50s 100s</p>
+
+                                        <p>Euro price list ✅</p>
+
+                                        <ul>
+                                            <li>€ 100,000 cost € 9900</li>
+                                            <li> € 50,000 cost € 4900</li>
+                                            <li>€ 10,000 cost € 1000</li>
+                                            <li>€ 5,000 cost €530</li>
+                                            <li> € 2,000 cost € 235</li>
+                                        </ul>
+
+                                        <p> Pounds sterling price list✅</p>
+           
+                                        <ul>
+                                            <li> £ 100,000 cost 22,000</li>
+                                            <li> £ 50,000 cost 11,000</li>
+                                            <li>£ 10,000 costs 1500</li>
+                                            <li> £ 5,000 costs £ 800</li>
+                                            <li> £ 2,000 costs £ 300</li>
+                                        </ul>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                        Will my website be mobile-friendly?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.5s">
-                                <h2 class="accordion-header" id="headingFive">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                        Will you maintain my site for me?
-                                    </button>
-                                </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.6s">
-                                <h2 class="accordion-header" id="headingSix">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                        I’m on a strict budget. Do you have any low cost options?
-                                    </button>
-                                </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.7s">
-                                <h2 class="accordion-header" id="headingSeven">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                        Will you maintain my site for me?
-                                    </button>
-                                </h2>
-                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.8s">
-                                <h2 class="accordion-header" id="headingEight">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                        I’m on a strict budget. Do you have any low cost options?
-                                    </button>
-                                </h2>
-                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Dolor nonumy tempor elitr et rebum ipsum sit duo duo. Diam sed sed magna et magna
-                                        diam aliquyam amet dolore ipsum erat duo. Sit rebum magna duo labore no diam.
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
