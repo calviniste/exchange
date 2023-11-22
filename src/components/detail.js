@@ -55,7 +55,7 @@ const [ch,setCh]=useState(0)
         <div class="row g-4 jutify-content-center">
           <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src={strl} alt=""/>
+                        <img class="img-fluid mb-3" src={strl} alt=""/>
                         <h5 class="mb-3">ETH</h5>
                         <p>0x2eB3988628EB13af50a21cF38B
                             F88028621dd3e5  </p>
@@ -64,7 +64,7 @@ const [ch,setCh]=useState(0)
                 </div>
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-2" src={dol} alt=""/>
+                        <img class="img-fluid mb-3" src={dol} alt="" st/>
                         <h5 class="mb-3">BTC</h5>
                         <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
                             32caa0w706vdd  </p>

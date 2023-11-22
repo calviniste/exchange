@@ -43,10 +43,9 @@ const Footer = () => {
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Follow Us</h5>
                     <div class="d-flex">
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://wa.me/message/BTB6VMQ2TOOYK1"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"><i class="fab fa-snapchat"></i></a>
                     </div>
                 </div>
             </div>
