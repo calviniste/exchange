@@ -88,7 +88,13 @@ h6,
 .navbar .navbar-brand {
     height: 75px;
 }
-
+.it{
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-weight: 500;
+    outline: none;
+}
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
@@ -183,6 +189,7 @@ h6,
 .service-item:hover::after {
     opacity: 0;
 }
+
 
 
 /*** Roadmap ***/

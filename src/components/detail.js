@@ -52,26 +52,26 @@ const Detail = () => {
               <h1 class="display-6">Means of payment</h1>
               <p class="text-primary fs-5 mb-5">copy this address and go pay</p>
             </div>
-            <div class="row g-4 jutify-content-center">
-              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item bg-white p-5">
-                  <img class="img-fluid mb-4" src={strl} alt="" />
-                  <h5 class="mb-3">ETH</h5>
-                  <p>0x2eB3988628EB13af50a21cF38B
-                    F88028621dd3e5  </p>
-                  <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+        <div class="row g-4 jutify-content-center">
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src={strl} alt=""/>
+                        <h5 class="mb-3">ETH</h5>
+                        <p>0x2eB3988628EB13af50a21cF38B
+                            F88028621dd3e5  </p>
+                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item bg-white p-5">
-                  <img class="img-fluid mb-2" src={dol} alt="" />
-                  <h5 class="mb-3">BTC</h5>
-                  <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
-                    32caa0w706vdd  </p>
-                  <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-2" src={dol} alt=""/>
+                        <h5 class="mb-3">BTC</h5>
+                        <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
+                            32caa0w706vdd  </p>
+                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                    
                 </div>
-
-              </div>
 
             </div>
           </div>
