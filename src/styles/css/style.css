@@ -5,7 +5,38 @@
     --light: #F2F8FE;
     --dark: #111111;
 }
-
+.it1{
+    background-image: url("../../assets/img/doll.jpg");
+    height: 80vh;
+}
+.it2{
+    background-image: url("../../assets/img/differents-euros-differents.jpg");
+    height: 80vh;
+}
+.it3{
+    background-image: url("../../assets/img/thumbs_b_c_db6fb5c0761a642b8f9b939030868441.jpg");
+    height: 80vh;
+}
+.it4{
+    background-image: url("../../assets/img/téléchargement.jpeg");
+    height: 80vh;
+}
+.cri{
+    background:rgba(0, 0, 0,0.5);
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cri h1{
+    color: #111111;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(20, 212, 255,0.2);
+    padding: 10px 20px;
+}
 .back-to-top {
     position: fixed;
     display: none;

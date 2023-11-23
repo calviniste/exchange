@@ -2,29 +2,49 @@ import React from "react"
 import '../styles/css/style.css'
 import '../styles/css/bootstrap.min.css'
 import ib from '../assets/img/hero-1.png'
+import i from '../assets/img/about.png'
 import { NavLink } from "react-router-dom"
 const Header = () => {
     return (
-        <div>
-            
-
-            <div class="container-fluid hero-header bg-light py-5 mb-5">
-                <div class="container py-5">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-6">
-                            <h1 class="display-4 mb-3 animated slideInDown">Make Better Life With Trusted CryptoCoin</h1>
-                            <p class="animated slideInDown">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                                diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo
-                                magna dolore erat amet</p>
-                            <a href="" class="btn btn-primary py-3 px-4 animated slideInDown">Buy Now</a>
-                        </div>
-                        <div class="col-lg-6 animated fadeIn">
-                            <img class="img-fluid animated pulse infinite" style={{ animationDuration: 3 }} src={ib} alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button></div>
+  <div class="carousel-inner">
+    <div class="it1 carousel-item  active"  data-bs-interval="10000">
+      {/* <img src={ib} class="d-block w-100" alt="..."/> */}
+     <div class='cri'>
+     <h1>Buy Conterfeit USD Online</h1>
+     </div>
+    </div>
+    <div class="it2 carousel-item"  data-bs-interval="10000">
+    <div class='cri'>
+     <h1>Buy contrefeit EURO Online</h1>
+     </div>
+    </div>
+    <div class="it3 carousel-item"  data-bs-interval="10000">
+    <div class='cri'>
+     <h1>Buy contrefeit POUNDS STERLING Online</h1>
+     </div>
+    </div>
+    <div class="it4 carousel-item"  data-bs-interval="10000">
+    <div class='cri'>
+     <h1>Buy contrefeit AUD Online</h1>
+     </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     )
 }
 
