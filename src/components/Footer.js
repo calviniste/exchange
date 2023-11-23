@@ -21,32 +21,42 @@ const Footer = () => {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>propnotesandclone@gmail.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Currency Wallet</a>
-                    <a class="btn btn-link" href="">Currency Transaction</a>
-                    <a class="btn btn-link" href="">Bitcoin Investment</a>
-                    <a class="btn btn-link" href="">Token Sale</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Get in touch</h5>
                     <div class="d-flex">
                         <a class="btn btn-square rounded-circle me-1" href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href="https://wa.me/message/BTB6VMQ2TOOYK1"><i class="fab fa-whatsapp"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"><i class="fab fa-snapchat"></i></a>
+                        
                     </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Services</h5>
+                    <a class="btn btn-link" href="">Australian dollar</a>
+                    <a class="btn btn-link" href="">Us dollar</a>
+                    <a class="btn btn-link" href="">Pounds</a>
+                    <a class="btn btn-link" href="">Euro</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Services</a>
+                    
+                    
+                </div>
+               
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4 ">Get In Touch</h5>
+                    <div class="mb-6 d-flex">
+                        <a class="btn btn-square rounded-circle me-1 " href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://wa.me/message/BTB6VMQ2TOOYK1"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"><i class="fab fa-snapchat"></i></a>
+                        
+                    </div>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>propnotesandclone@gmail.com</p>
+                    
                 </div>
             </div>
         </div>
@@ -54,7 +64,7 @@ const Footer = () => {
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a href="#">propnotesandclone</a>, All Right Reserved.
                     </div>
                     
                 </div>

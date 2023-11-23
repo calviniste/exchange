@@ -1,6 +1,8 @@
 import usd from '../assets/img/doll.jpg'
+import usdC from '../assets/img/téléchargement.jpeg'
 import euro from '../assets/img/eur.jpg'
 import strl from '../assets/img/sterling.png'
+
 export const MONEY=[
     {
         name:'Us dollar',
@@ -22,7 +24,7 @@ export const MONEY=[
     },
     {
         name:'Australian dollar',
-        image:strl,
+        image:usdC,
         dsc:'Counterfeit Money',
         route:'sterling'
     },
