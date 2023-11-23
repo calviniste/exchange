@@ -19,36 +19,29 @@ const About = () => {
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100">
               <h1 class="display-6">About Us</h1>
-              <p class="text-primary fs-5 mb-4">The Most Trusted CryptoExchange Platform</p>
-              <p>
-                We are the best and unique manufacturer of HIGH QUALITY undetectable counterfeit banknotes.  </p>
-                <p>With over a billion of our products circulating around the world. </p>
-                <p>We only offer original, high-quality counterfeit bills.</p>
-               <p>We ship worldwide.  We also print and sell Class A banknotes from over 52 currencies worldwide.  Here is your chance to become a millionaire.
-                </p> 
-                <p>Our money is perfectly reproduced, visually and haptically indistinguishable.  We ship in different sizes, boxed and hidden.</p>
-                <p>All our notes carry all holograms and watermarks and pass the light detector test.</p>
-                <p>We deliver the money directly to your home without customs intervention.</p>
+              <p class="text-primary fs-5 mb-4">We offers you high quality counterfeit banknotes 🌟✔️  </p>
+              
              
             
-              <p class="mb-4">We have a huge amount in stock</p>
+              <p class="mb-4">We use the latest technology to print our counterfeit notes/tickets that look 100% like the real ticket.  As with real banknotes, we ensure that all security features are accurate in our banknotes.  You can buy high quality undetectable counterfeit banknotes from us .  More than a billion of our products circulate all round the world .We deliver your products on short notice and offer full security, so don't be afraid to buy from us.  Delivery is discreet, safe and secure. ✅</p>
               <div class="d-flex align-items-center mb-2">
                 <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                <span>EUROS</span>
-              </div>
-              <div class="d-flex align-items-center mb-2">
-                <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                <span>DOLLARS</span>
+                <span>Australian dollar</span>
               </div>
               <div class="d-flex align-items-center mb-2">
                 <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                <span>POUNDS AND NEW DOCUMENTS LIKE PASSPORTS</span>
+                <span>Us dollar</span>
               </div>
-              <div class="d-flex align-items-center mb-4">
+              <div class="d-flex align-items-center mb-2">
                 <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
-                <span>GREEN CARDS AND DRIVING LICENSES</span>
+                <span>Euro</span>
               </div>
-              <a class="btn btn-primary py-3 px-4" href="">Read More</a>
+              <div class="d-flex align-items-center mb-2">
+                <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                <span>Pounds</span>
+              </div>
+              
+              
             </div>
           </div>
         </div>

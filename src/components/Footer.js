@@ -24,7 +24,7 @@ const Footer = () => {
                     <h5 class="mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>propnotesandclone@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-4">Our Services</h5>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="mb-4">Follow Us</h5>
+                    <h5 class="mb-4">Get in touch</h5>
                     <div class="d-flex">
                         <a class="btn btn-square rounded-circle me-1" href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href="https://wa.me/message/BTB6VMQ2TOOYK1"><i class="fab fa-whatsapp"></i></a>

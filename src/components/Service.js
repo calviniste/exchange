@@ -21,7 +21,7 @@ const Services=()=>{
         <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{maxWidth: 500}}>
                 <h1 class="display-6">Services</h1>
-                <p class="text-primary fs-5 mb-5">Exchange Cryptocurrency</p>
+                <p class="text-primary fs-5 mb-5">Prop Money</p>
             </div>
             <div class="row g-4">
                {
@@ -33,7 +33,7 @@ const Services=()=>{
                         <p>{m.dsc}</p>
                         <a href=""
                         onClick={()=>change(m.image,m.name,m.dsc)}
-                        >Exchange <i class="fa fa-arrow-right ms-2"></i></a>
+                        >Place order, then make payment <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 )

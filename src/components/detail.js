@@ -47,41 +47,13 @@ const Detail = () => {
 
         </div>
         <div class="container-xxl bg-light py-5 my-5">
+       
           <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: 500 }}>
-              <h1 class="display-6">Means of payment</h1>
-              <p class="text-primary fs-5 mb-5">copy this address and go pay</p>
+              <h1 class="display-6">How to order</h1>
+              <p class="text-primary fs-5 mb-5">How to place an order🚛🚚</p>
             </div>
-        <div class="row g-4 jutify-content-center">
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src={strl} alt=""/>
-                        <h5 class="mb-3">ETH</h5>
-                        <p>0x2eB3988628EB13af50a21cF38B
-                            F88028621dd3e5  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-2" src={dol} alt=""/>
-                        <h5 class="mb-3">BTC</h5>
-                        <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
-                            32caa0w706vdd  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                    
-                </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="row g-5 align-items-center">
-
-
-
-
-          <form class="row g-3">
+            <form class="row">
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Your country/city</label>
               <input type="text" class="form-control" id="validationDefault01" required />
@@ -156,6 +128,41 @@ const Detail = () => {
               <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
           </form>
+        <div class="row g-4 jutify-content-center">
+        <div class="row g-4 jutify-content-center" >
+        <h5 class="display-8 g-4">Keep it short guys, there are lots of clients waiting to be attended to okay. Thanks for the trust📦📦📦
+Payment method: Bitcoin or Ethereum
+Copy link below 👇</h5>
+</div>
+          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-4" src={strl} alt=""/>
+                        <h5 class="mb-3">ETH</h5>
+                        <p>0x2eB3988628EB13af50a21cF38B
+                            F88028621dd3e5  </p>
+                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white p-5">
+                        <img class="img-fluid mb-2" src={dol} alt=""/>
+                        <h5 class="mb-3">BTC</h5>
+                        <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
+                            32caa0w706vdd  </p>
+                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                    </div>
+                    
+                </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row g-5 align-items-center">
+
+
+
+
+         
 
 
 
