@@ -128,41 +128,45 @@ const DetailEuro = () => {
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit" onClick={()=>setShow(false)}>Submit form</button>
+              <button class="btn btn-primary"  onClick={()=>setShow(false)}>Submit form</button>
             </div>
           </form>
-        <div class="row g-4 jutify-content-center">
-        <div class="row g-4 jutify-content-center" >
-        <h5 class="display-8 g-4">Keep it short guys, there are lots of clients waiting to be attended to okay. Thanks for the trust📦📦📦
-Payment method: Bitcoin or Ethereum
-Copy link below 👇</h5>
-</div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src={strl} alt=""/>
-                        <h5 class="mb-3">ETH</h5>
-                        <p>0x2eB3988628EB13af50a21cF38B
-                            F88028621dd3e5  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-2" src={dol} alt=""/>
-                        <h5 class="mb-3">BTC</h5>
-                        <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
-                            32caa0w706vdd  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                    
-                </div>
-
-            </div>
+       
           </div>:
-          <div class="card">
+          <div>
+
+          <div class="card mb-5">
           <div class="card-body">
-            <p>le message ici</p>
+          <p style={{textAlign:'center'}}>Keep it short guys, there are lots of clients waiting to be attended to okay.Thanks for the trust📦📦📦</p>
+          <p style={{textAlign:'center'}}> 
+Payment method: Bitcoin or Ethereum
+Copy link below 👇</p>
           </div>
+          
+          </div>
+          <div class="row g-4 jutify-content-center">
+      
+      <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-white p-5">
+                    <img class="img-fluid mb-4" src={strl} alt=""/>
+                    <h5 class="mb-3">ETH</h5>
+                    <p>0x2eB3988628EB13af50a21cF38B
+                        F88028621dd3e5  </p>
+                    <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-white p-5">
+                    <img class="img-fluid mb-2" src={dol} alt=""/>
+                    <h5 class="mb-3">BTC</h5>
+                    <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
+                        32caa0w706vdd  </p>
+                    <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+                
+            </div>
+
+        </div>
         </div>}
         </div>
         <div class="row g-5 align-items-center">
