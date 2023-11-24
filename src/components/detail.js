@@ -100,23 +100,34 @@ const Detail = () => {
               justifyContent: "space-evenly",
             }}
           >
-            <div>
-              <h5>GRADE A </h5>
-              {Cost.map((c) => (
-                <div class="d-flex align-items-center mb-2">
-                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
-                  <span>{c.value}</span>
-                </div>
-              ))}
-            </div>
-            <div>
-              <h5>GRADE B</h5>
-              {Cost2.map((c) => (
-                <div class="d-flex align-items-center mb-2">
-                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
-                  <span>{c.value}</span>
-                </div>
-              ))}
+            <div class="card w-100">
+              <table class="table table-bordered w-100 text-center" border={1}>
+                <tr>
+                  <th style={{textAlign:'center'}}>
+                    <h5>GRADE A </h5>
+                  </th>
+                  <th style={{textAlign:'center'}}>
+                    <h5>GRADE B</h5>
+                  </th>
+                </tr>
+
+                {Cost.map((c) => (
+                  <tr  style={{textAlign:'center'}}>
+                    <td>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
+                        <span>{c.value}</span>
+                      </div>
+                    </td>
+                    <td style={{textAlign:'center'}}>
+                      <div class="d-flex align-items-center mb-2">
+                        <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
+                        <span>{c.val}</span>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </table>
             </div>
           </div>
         </div>
@@ -180,16 +191,26 @@ const Detail = () => {
                       onChange={(e) => setCh(e.target.value)}
                     >
                       {" "}
-                      <option value="" style={{fontWeight:'bold'}}>Grade A</option>
-                      <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;$100.000</option>
+                      <option value="" style={{ fontWeight: "bold" }}>
+                        Grade A
+                      </option>
+                      <option value="1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;$100.000
+                      </option>
                       <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;$50.000</option>
-                      <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;$10.000 </option>
+                      <option value="3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;$10.000{" "}
+                      </option>
                       <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;$5.000</option>
                       <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;$2.000</option>
-                      <option value="" style={{fontWeight:'bold'}}>Grade B</option>
+                      <option value="" style={{ fontWeight: "bold" }}>
+                        Grade B
+                      </option>
                       <option value="b1">&nbsp;&nbsp;&nbsp;&nbsp;$8550</option>
                       <option value="b2">&nbsp;&nbsp;&nbsp;&nbsp;$11550</option>
-                      <option value="b3">&nbsp;&nbsp;&nbsp;&nbsp;$10.000</option>
+                      <option value="b3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;$10.000
+                      </option>
                       <option value="b4">&nbsp;&nbsp;&nbsp;&nbsp;$5.000</option>
                       <option value="b5">&nbsp;&nbsp;&nbsp;&nbsp;$2.000</option>
                     </select>

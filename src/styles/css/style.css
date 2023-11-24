@@ -7,19 +7,19 @@
 }
 .it1{
     background-image: url("../../assets/img/doll.jpg");
-    height: 80vh;
+    height: 60vh;
 }
 .it2{
     background-image: url("../../assets/img/differents-euros-differents.jpg");
-    height: 80vh;
+    height: 60vh;
 }
 .it3{
     background-image: url("../../assets/img/thumbs_b_c_db6fb5c0761a642b8f9b939030868441.jpg");
-    height: 80vh;
+    height: 60vh;
 }
 .it4{
     background-image: url("../../assets/img/téléchargement.jpeg");
-    height: 80vh;
+    height: 60vh;
 }
 .cri{
     background:rgba(0, 0, 0,0.5);
@@ -168,6 +168,12 @@ h1{
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
+    }
+    .cri h1{
+        font-size: small;
+    }
+    .it1,.it2,.it3,.it4{
+        height: 40vh;
     }
 }
 
