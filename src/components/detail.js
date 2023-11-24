@@ -101,24 +101,24 @@ const Detail = () => {
             }}
           >
             <div class="card w-100">
-              <table class="table table-bordered w-100 text-center" border={1}>
+              <table class="table table-bordered w-100" border={1}>
                 <tr>
-                  <th style={{textAlign:'center'}}>
+                  <th>
                     <h5>GRADE A </h5>
                   </th>
-                  <th style={{textAlign:'center'}}>
+                  <th>
                     <h5>GRADE B</h5>
                   </th>
                 </tr>
 
                 {Cost.map((c) => (
                   <tr  style={{textAlign:'center'}}>
-                    <td>
+                    <th>
                       <div class="d-flex align-items-center mb-2">
                         <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
                         <span>{c.value}</span>
                       </div>
-                    </td>
+                    </th>
                     <td style={{textAlign:'center'}}>
                       <div class="d-flex align-items-center mb-2">
                         <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
