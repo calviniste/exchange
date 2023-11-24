@@ -5,6 +5,7 @@ import dol from '../../src/assets/img/btc-min.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
+import { Cost } from '../const/money';
 const DetailEuro = () => {
   useEffect(() => {
     const wow = new WOW.WOW();
