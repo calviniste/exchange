@@ -14,10 +14,15 @@ const Header = () => {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button></div>
   <div class="carousel-inner">
+    <div class="it4 carousel-item"  data-bs-interval="10000">
+    <div class='cri'>
+     <h1>Buy Conterfeit USD Online </h1>
+     </div>
+    </div>
     <div class="it1 carousel-item  active"  data-bs-interval="10000">
       {/* <img src={ib} class="d-block w-100" alt="..."/> */}
      <div class='cri'>
-     <h1>Buy Conterfeit USD Online</h1>
+     <h1>Buy contrefeit Australian dollar Online</h1>
      </div>
     </div>
     <div class="it2 carousel-item"  data-bs-interval="10000">
@@ -30,11 +35,7 @@ const Header = () => {
      <h1>Buy contrefeit POUNDS STERLING Online</h1>
      </div>
     </div>
-    <div class="it4 carousel-item"  data-bs-interval="10000">
-    <div class='cri'>
-     <h1>Buy contrefeit AUD Online</h1>
-     </div>
-    </div>
+    
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
