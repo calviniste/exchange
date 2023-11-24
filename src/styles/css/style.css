@@ -37,6 +37,16 @@
     background-color: rgba(20, 212, 255,0.2);
     padding: 10px 20px;
 }
+.tarif{
+    margin-top: 40px;
+}
+.tarif h1{
+    text-align: center;
+    margin-block: 20px;
+}
+.tarif p{
+    text-align: justify;
+}
 .back-to-top {
     position: fixed;
     display: none;
