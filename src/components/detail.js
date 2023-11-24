@@ -90,40 +90,62 @@ const Detail = () => {
           </p>
           <p>We can produce any amount depending on orders!!</p>
           <h1>This is the Menu🚨</h1>
-          <h5 style={{textAlign:'center'}}>PRICE OF NOTES</h5>
+          <h5 style={{ textAlign: "center", marginBlock: 12 }}>
+            PRICE OF NOTES
+          </h5>
           <div
-            class="row"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
           >
-            <div class='col-lg-6 col-md-6'>
+            <div>
               <h5>GRADE A </h5>
               {Cost.map((c) => (
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
                   <span>{c.value}</span>
                 </div>
               ))}
             </div>
-            <div class='col-lg-6 col-md-6'>
+            <div>
               <h5>GRADE B</h5>
               {Cost2.map((c) => (
                 <div class="d-flex align-items-center mb-2">
-                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
+                  <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
                   <span>{c.value}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <div class="container-xxl bg-light py-5 my-5">
+        <div class="container-xxl bg-light py-5 my-2">
           {show ? (
             <div class="container py-5">
               <div
                 class="text-center mx-auto wow fadeInUp"
                 data-wow-delay="0.1s"
-                style={{ maxWidth: 500 }}
+                style={{ marginBottom: 60 }}
               >
                 <h1 class="display-6">How to order</h1>
                 <p class="text-primary fs-5 mb-5">How to place an order🚛🚚</p>
+                <p>Hey guys </p>
+                <p>Here's how to place an order</p>
+
+                <p>
+                  Open a BTC site,{" "}
+                  <a href="https://www.moonpay.com/buy/BTC">Moonpay</a>
+                </p>
+
+                <p>Enter amount </p>
+                <p>Choose my wallet </p>
+                <p>Complete the steps </p>
+                <p>And confirm payout</p>
+                <p>
+                  Delivery is instant, once you place order successfully, the
+                  team drives to your desired location with package
+                </p>
               </div>
               <form class="row">
                 <div class="col-md-4">
@@ -157,11 +179,19 @@ const Detail = () => {
                       class="form-select"
                       onChange={(e) => setCh(e.target.value)}
                     >
-                      <option value="1">100.000 $</option>
-                      <option value="2">50.000 $</option>
-                      <option value="3">10.000 $</option>
-                      <option value="4">5.000 $</option>
-                      <option value="5">2.000 $</option>
+                      {" "}
+                      <option value="" style={{fontWeight:'bold'}}>Grade A</option>
+                      <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;$100.000</option>
+                      <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;$50.000</option>
+                      <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;$10.000 </option>
+                      <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;$5.000</option>
+                      <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;$2.000</option>
+                      <option value="" style={{fontWeight:'bold'}}>Grade B</option>
+                      <option value="b1">&nbsp;&nbsp;&nbsp;&nbsp;$8550</option>
+                      <option value="b2">&nbsp;&nbsp;&nbsp;&nbsp;$11550</option>
+                      <option value="b3">&nbsp;&nbsp;&nbsp;&nbsp;$10.000</option>
+                      <option value="b4">&nbsp;&nbsp;&nbsp;&nbsp;$5.000</option>
+                      <option value="b5">&nbsp;&nbsp;&nbsp;&nbsp;$2.000</option>
                     </select>
                     {/* <input type="text" class="form-control" onChange={(e)=>setCh(e.target.value)} id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required/> */}
                   </div>
@@ -219,7 +249,41 @@ const Detail = () => {
                                 <p>$1.500</p>
                               ) : (
                                 <div>
-                                  {ch === "4" ? <p>$700</p> : <p>$300</p>}
+                                  {ch === "4" ? (
+                                    <p>$700</p>
+                                  ) : (
+                                    <div>
+                                      {ch === "5" ? (
+                                        <p>$300</p>
+                                      ) : (
+                                        <div>
+                                          {ch === "b1" ? (
+                                            <p>$500</p>
+                                          ) : (
+                                            <div>
+                                              {ch === "b2" ? (
+                                                <p>$700</p>
+                                              ) : (
+                                                <div>
+                                                  {ch === "b3" ? (
+                                                    <p>$800</p>
+                                                  ) : (
+                                                    <div>
+                                                      {ch === "b4" ? (
+                                                        <p>$1000</p>
+                                                      ) : (
+                                                        <p>$10k</p>
+                                                      )}
+                                                    </div>
+                                                  )}
+                                                </div>
+                                              )}
+                                            </div>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
+                                  )}
                                 </div>
                               )}
                             </div>

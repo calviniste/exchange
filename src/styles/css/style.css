@@ -68,7 +68,9 @@ h6,
     font-weight: 500 !important;
 }
 
-
+h1{
+    font-weight: 300;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
