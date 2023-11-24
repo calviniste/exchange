@@ -8,6 +8,7 @@ import Faq from "../components/Faq"
 import Outlets from "../pages/Outlet"
 import Buy from '../pages/Buy'
 import Detail from "../components/detail"
+import DetailEuro from "../components/detailEuro"
 const AppNavigation = () => {
     return (
         <BrowserRouter>
@@ -19,7 +20,7 @@ const AppNavigation = () => {
                     <Route path="faq" element={<Faq />} />
                     <Route path="buy" element={<Buy />} />
                     <Route path="usd" element={<Detail />} />
-                    <Route path="euro" element={<Buy />} />
+                    <Route path="euro" element={<DetailEuro />} />
                     <Route path="sterling" element={<Buy />} />
                 </Route>
             </Routes>

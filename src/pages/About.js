@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import ab from '../assets/img/about.png'
+import ab from '../assets/img/machine.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
