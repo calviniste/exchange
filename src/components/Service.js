@@ -13,7 +13,7 @@ const Services=()=>{
        setImg(img)
        setDesc(desc)
        setName(name)
-        navigate('usd')
+        navigate(route)
         
     }
     return(
@@ -32,7 +32,7 @@ const Services=()=>{
                         <h5 class="mb-3">{m.name}</h5>
                         <p>{m.dsc}</p>
                         <a href=""
-                        onClick={()=>change(m.image,m.name,m.dsc)}
+                        onClick={()=>change(m.image,m.name,m.dsc,m.route)}
                         >Place order, then make payment <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
