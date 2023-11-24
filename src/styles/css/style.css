@@ -6,20 +6,20 @@
     --dark: #111111;
 }
 .it1{
-    background-image: url("../../assets/img/doll.jpg");
-    height: 60vh;
+    background-image: url("../../assets/img/téléchargement-min.jpeg");
+    height: 80vh;
 }
 .it2{
-    background-image: url("../../assets/img/differents-euros-differents.jpg");
-    height: 60vh;
+    background-image: url("../../assets/img/differents-euros-differents-min.jpg");
+    height: 80vh;
 }
 .it3{
-    background-image: url("../../assets/img/thumbs_b_c_db6fb5c0761a642b8f9b939030868441.jpg");
-    height: 60vh;
+    background-image: url("../../assets/img/thumbs_b_c_db6fb5c0761a642b8f9b939030868441-min.jpg");
+    height: 80vh;
 }
 .it4{
-    background-image: url("../../assets/img/téléchargement.jpeg");
-    height: 60vh;
+    background-image: url("../../assets/img/doll-min.jpg");
+    height: 80vh;
 }
 .cri{
     background:rgba(0, 0, 0,0.5);
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .cri h1{
     color: #111111;
@@ -37,7 +38,16 @@
     background-color: rgba(20, 212, 255,0.2);
     padding: 10px 20px;
 }
-.tarif{
+
+.cri h5{
+    color: #111111;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(20, 212, 255,0.2);
+    padding: 10px 20px;
+}
+.tarif {
     margin-top: 40px;
 }
 .tarif h1{
@@ -46,6 +56,7 @@
 }
 .tarif p{
     text-align: justify;
+
 }
 .back-to-top {
     position: fixed;
@@ -170,10 +181,18 @@ h1{
         border-top: 1px solid #EEEEEE;
     }
     .cri h1{
-        font-size: small;
+        font-size: medium;
     }
     .it1,.it2,.it3,.it4{
         height: 40vh;
+    }
+    .cri h5{
+        font-size: small ;
+        text-align: center;
+    }
+    .cri .btn{
+        height:30px;
+        font-size: 12px;
     }
 }
 

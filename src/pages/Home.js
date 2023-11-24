@@ -6,7 +6,7 @@ import Menu from "./Menu"
 import About from "./About"
 import Services from "../components/Service"
 import Faq from "../components/Faq"
-import Nav from "../components/nav.js"
+
 
 const Home = () => {
     return (

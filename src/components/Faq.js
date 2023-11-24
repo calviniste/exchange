@@ -9,41 +9,6 @@ const Faq = () => {
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="accordion" id="accordionExample">
-                            <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How to use the Cloned Cards?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Step 1: Insert ATM Card.</p>
-                                        <p>
-
-                                            Step 2: Select the Language.</p>
-                                        <p>
-                                            Step 3: Enter 4 Digit ATM Pin.  </p>
-                                        <p>
-
-                                            Step 4: Select Your Transaction.</p>
-                                        <p>
-
-                                            Step 5: Select Your Account.</p>
-                                        <p>
-
-                                            Step 6: Enter the Withdrawal Money(withdraw £500 every after 2 hours) </p>
-                                        <p>
-
-                                            Step 7: Collect the Cash.    </p>
-                                        <p>
-
-                                            Step 8: Take a Printed Receipt.  </p>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import ab from '../assets/img/eur.jpg'
-import strl from '../../src/assets/img/eth.jpg'
-import dol from '../../src/assets/img/btc.jpg'
+import ab from '../assets/img/eur-min.jpg'
+import strl from '../../src/assets/img/eth-min.jpg'
+import dol from '../../src/assets/img/btc-min.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
