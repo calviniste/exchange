@@ -195,14 +195,14 @@ const Detail = () => {
                         Grade A
                       </option>
                       <option value="1">
-                        &nbsp;&nbsp;&nbsp;&nbsp;$100.000
+                        &nbsp;&nbsp;&nbsp;&nbsp;$19.500
                       </option>
-                      <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;$50.000</option>
+                      <option value="2">&nbsp;&nbsp;&nbsp;&nbsp; $4.1500</option>
                       <option value="3">
-                        &nbsp;&nbsp;&nbsp;&nbsp;$10.000{" "}
+                        &nbsp;&nbsp;&nbsp;&nbsp;$65.500{" "}
                       </option>
-                      <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;$5.000</option>
-                      <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;$2.000</option>
+                      <option value="4">&nbsp;&nbsp;&nbsp;&nbsp;$135000</option>
+                      <option value="5">&nbsp;&nbsp;&nbsp;&nbsp;$275000</option>
                       <option value="" style={{ fontWeight: "bold" }}>
                         Grade B
                       </option>
@@ -259,23 +259,23 @@ const Detail = () => {
                     </div>
                     <div>
                       {ch === "1" ? (
-                        <p>$25.000</p>
+                        <p>$1.000</p>
                       ) : (
                         <div>
                           {ch === "2" ? (
-                            <p>$12.000</p>
+                            <p>$2.000</p>
                           ) : (
                             <div>
                               {ch === "3" ? (
-                                <p>$1.500</p>
+                                <p>$3.000</p>
                               ) : (
                                 <div>
                                   {ch === "4" ? (
-                                    <p>$700</p>
+                                    <p>$5.000</p>
                                   ) : (
                                     <div>
                                       {ch === "5" ? (
-                                        <p>$300</p>
+                                        <p>$10.000</p>
                                       ) : (
                                         <div>
                                           {ch === "b1" ? (
