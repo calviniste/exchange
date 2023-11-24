@@ -5,6 +5,12 @@ import strl from '../assets/img/sterling.png'
 
 export const MONEY=[
     {
+        name:'Australian dollar',
+        image:usdC,
+        dsc:'Counterfeit Money',
+        route:'usdA'
+    },
+    {
         name:'Us dollar',
         image:usd,
         dsc:'Counterfeit Money',
@@ -22,10 +28,5 @@ export const MONEY=[
         dsc:'Counterfeit Money',
         route:'sterling'
     },
-    {
-        name:'Australian dollar',
-        image:usdC,
-        dsc:'Counterfeit Money',
-        route:'usdA'
-    },
+    
 ]
