@@ -14,7 +14,22 @@ const DetailEuro = () => {
 
   const [ch, setCh] = useState('0')
   const [show,setShow]=useState(true)
+  const [city,setCity]=useState('')
+  const [name,setName]=useState('')
+  const [deli,setDeli]=useState('')
+  const [qua,setQua]=useState('')
+  const [c,setC]=useState('')
   
+  
+  
+  
+  const chang=()=>{
+    setTimeout(() => {
+      if(city!=''||name!=''||deli!=''||qua!=''||c!=''){
+        setShow(false)
+      }
+    }, 1000);
+  }
 
   return (
     <div class="container-xxl py-5 bg-light">
@@ -59,11 +74,11 @@ const DetailEuro = () => {
             <form class="row">
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Your country/city</label>
-              <input type="text" class="form-control" id="validationDefault01" required />
+              <input type="text" class="form-control" id="validationDefault01" onChange={(e)=>setCity(e.target.value)} required />
             </div>
             <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Your name</label>
-              <input type="text" class="form-control" id="validationDefault02" required />
+              <input type="text" class="form-control" id="validationDefault02" required onChange={(e)=>setName(e.target.value)}/>
             </div>
             <div class="col-md-4">
               <label for="validationDefaultUsername" class="form-label">Required quantity
@@ -91,15 +106,15 @@ const DetailEuro = () => {
             </div>
             <div class="col-md-6">
               <label for="validationDefault03" class="form-label">Delivery address details</label>
-              <input type="text" class="form-control" id="validationDefault03" required />
+              <input type="text" class="form-control" id="validationDefault03" required onChange={(e)=>setDeli(e.target.value)}/>
             </div>
             <div class="col-md-3">
               <label for="validationDefault04" class="form-label">Delivery address details</label>
-              <input type="text" class="form-control" id="validationDefault05" required />
+              <input type="text" class="form-control" id="validationDefault05" required onChange={(e)=>setQua(e.target.value)}/>
             </div>
             <div class="col-md-3">
               <label for="validationDefault05" class="form-label">contact number</label>
-              <input type="number" class="form-control" id="validationDefault05" required />
+              <input type="number" class="form-control" id="validationDefault05" required onChange={(e)=>setC(e.target.value)}/>
             </div>
             <div class="col-12">
               <div style={{display:'flex',flexDirection:'row'}}>
@@ -128,7 +143,7 @@ const DetailEuro = () => {
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary"  onClick={()=>setShow(false)}>Submit form</button>
+              <button class="btn btn-primary"  onClick={()=>chang()}>Submit form</button>
             </div>
           </form>
        
