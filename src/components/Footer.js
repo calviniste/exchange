@@ -1,4 +1,6 @@
+import { NavLink, useNavigate } from "react-router-dom"
 const Footer = () => {
+    const navigate=useNavigate()
     return (
         <div class="container-fluid bg-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -10,7 +12,6 @@ const Footer = () => {
                 </div>
                 <div class="col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
                     <div class="position-relative">
                         <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
                             placeholder="Your email"/>
@@ -21,16 +22,17 @@ const Footer = () => {
                 
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Services</h5>
-                    <a class="btn btn-link" href="">Australian dollar</a>
-                    <a class="btn btn-link" href="">Us dollar</a>
-                    <a class="btn btn-link" href="">Pounds</a>
-                    <a class="btn btn-link" href="">Euro</a>
+                    <a class="btn btn-link" href="service" onClick={()=>navigate('service')}>Australian dollar</a>
+                    <a class="btn btn-link" href="service" onClick={()=>navigate('service')}>Us dollar</a>
+                    <a class="btn btn-link" href="service" onClick={()=>navigate('service')}>Pounds</a>
+                    <a class="btn btn-link" href="service" onClick={()=>navigate('service')}>Euro</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Services</a>
+                    <a class="btn btn-link" href="about" onClick={()=>navigate('about')} >About Us</a>
+                    <a class="btn btn-link" href="https://wa.me/message/BTB6VMQ2TOOYK1">Contact Us</a>
+                    <a class="btn btn-link" href="service" onClick={()=>navigate('service')} >Services</a>
+                    
                     
                     
                 </div>

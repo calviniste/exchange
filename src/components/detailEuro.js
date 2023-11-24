@@ -20,7 +20,14 @@ const DetailEuro = () => {
   const [qua,setQua]=useState('')
   const [c,setC]=useState('')
   
-  
+  const copyTextToClipboard = (text) => {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  };
   
   
   const chang=()=>{
@@ -42,7 +49,7 @@ const DetailEuro = () => {
 
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100">
-              <h1 class="display-6">Dollar</h1>
+              <h1 class="display-6">Euro</h1>
               <p class="text-primary fs-5 mb-4">Description</p>
               <p>
                 Purchasing Euro tickets from propnotesetclone  is a transparent and convenient process. Through our user-friendly online platform, you can browse our selection, place your order and enjoy the convenience of worldwide delivery.  </p>
@@ -86,19 +93,19 @@ const DetailEuro = () => {
               <div class="input-group">
                 <select class="form-select" onChange={(e) => setCh(e.target.value)}>
                   <option value='1'>
-                    100.000 $
+                    100.000 € 
                   </option>
                   <option value='2'>
-                    50.000 $
+                    50.000 € 
                   </option>
                   <option value='3'>
-                    10.000 $
+                    10.000 € 
                   </option>
                   <option value='4'>
-                    5.000 $
+                    5.000 € 
                   </option>
                   <option value='5'>
-                    2.000 $
+                    2.000 € 
                   </option>
                 </select>
                 {/* <input type="text" class="form-control" onChange={(e)=>setCh(e.target.value)} id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required/> */}
@@ -125,14 +132,14 @@ const DetailEuro = () => {
                 </div>
                 <div>
                 {ch === '1' ?
-                  <p>$25.000</p>
+                  <p>€ 9900</p>
                   : <div>
-                    {ch === '2' ? <p>$12.000</p> :
+                    {ch === '2' ? <p>€ 4900</p> :
                       <div>{
-                        ch === '3' ?<p>$1.500</p>:
+                        ch === '3' ?<p>€ 1000</p>:
                         <div>
                           {
-                            ch === '4' ?<p>$700</p>:<p>$300</p>
+                            ch === '4' ?<p>€ 530</p>:<p>€ 235</p>
                           }
                         </div>
                     }
@@ -143,7 +150,7 @@ const DetailEuro = () => {
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary"  onClick={()=>chang()}>Submit form</button>
+              <button class="btn btn-primary"  onClick={()=>chang()}>Order now</button>
             </div>
           </form>
        
@@ -167,7 +174,8 @@ Copy link below 👇</p>
                     <h5 class="mb-3">ETH</h5>
                     <p>0x2eB3988628EB13af50a21cF38B
                         F88028621dd3e5  </p>
-                    <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                    <a href=""onClick={() => copyTextToClipboard('0x2eB3988628EB13af50a21cF38BF88028621dd3e5')}>copied <i class="fa fa-arrow-right ms-2"></i></a>
+                        
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -176,7 +184,7 @@ Copy link below 👇</p>
                     <h5 class="mb-3">BTC</h5>
                     <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
                         32caa0w706vdd  </p>
-                    <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
+                        <a href=""onClick={() =>copyTextToClipboard('bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd')}>copied <i class="fa fa-arrow-right ms-2"></i></a>
                 </div>
                 
             </div>

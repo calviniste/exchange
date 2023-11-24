@@ -26,6 +26,6 @@ export const MONEY=[
         name:'Australian dollar',
         image:usdC,
         dsc:'Counterfeit Money',
-        route:'sterling'
+        route:'usdA'
     },
 ]

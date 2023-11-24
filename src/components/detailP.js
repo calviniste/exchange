@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import ab from '../assets/img/doll.jpg'
+import ab from '../assets/img/sterling.png'
 import strl from '../../src/assets/img/eth.jpg'
 import dol from '../../src/assets/img/btc.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
-const Detail = () => {
+const DetailP = () => {
   useEffect(() => {
     const wow = new WOW.WOW();
     wow.init();
@@ -31,11 +31,11 @@ const Detail = () => {
   
   
   const chang=()=>{
- 
-      if(city.length>=1&& name.length>=1&& deli.length>=1&& qua.length>=1&& c.length>=1){
+    setTimeout(() => {
+      if(qua!='' && deli!=''){
         setShow(false)
       }
-    
+    }, 1000);
   }
 
   return (
@@ -49,10 +49,10 @@ const Detail = () => {
 
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100">
-              <h1 class="display-6">Us dollar</h1>
+              <h1 class="display-6">Pounds</h1>
               <p class="text-primary fs-5 mb-4">Description</p>
               <p>
-                Purchasing Us dollar tickets from propnotesetclone  is a transparent and convenient process. Through our user-friendly online platform, you can browse our selection, place your order and enjoy the convenience of worldwide delivery.  </p>
+                Purchasing Pounds tickets from propnotesetclone  is a transparent and convenient process. Through our user-friendly online platform, you can browse our selection, place your order and enjoy the convenience of worldwide delivery.  </p>
               <div class="d-flex align-items-center mb-2">
                 <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-3 fw-bold"></i>
                 <span>100% Satisfaction Guaranteed</span>
@@ -81,11 +81,11 @@ const Detail = () => {
             <form class="row">
             <div class="col-md-4">
               <label for="validationDefault01" class="form-label">Your country/city</label>
-              <input type="text" class="form-control" id="validationDefault01" onChange={(e)=>setCity(e.target.value)}  />
+              <input type="text" class="form-control" id="validationDefault01"  />
             </div>
             <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Your name</label>
-              <input type="text" class="form-control" id="validationDefault02"  onChange={(e)=>setName(e.target.value)}/>
+              <input type="text" class="form-control" id="validationDefault02"/>
             </div>
             <div class="col-md-4">
               <label for="validationDefaultUsername" class="form-label">Required quantity
@@ -93,19 +93,19 @@ const Detail = () => {
               <div class="input-group">
                 <select class="form-select" onChange={(e) => setCh(e.target.value)}>
                   <option value='1'>
-                    100.000 $
+                    100.000 £
                   </option>
                   <option value='2'>
-                    50.000 $
+                    50.000 £
                   </option>
                   <option value='3'>
-                    10.000 $
+                    10.000 £
                   </option>
                   <option value='4'>
-                    5.000 $
+                    5.000 £
                   </option>
                   <option value='5'>
-                    2.000 $
+                    2.000 £
                   </option>
                 </select>
                 {/* <input type="text" class="form-control" onChange={(e)=>setCh(e.target.value)} id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required/> */}
@@ -116,12 +116,12 @@ const Detail = () => {
               <input type="text" class="form-control" id="validationDefault03" required onChange={(e)=>setDeli(e.target.value)}/>
             </div>
             <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">E.mail</label>
+              <label for="validationDefault04" class="form-label">E-mail</label>
               <input type="text" class="form-control" id="validationDefault05" required onChange={(e)=>setQua(e.target.value)}/>
             </div>
             <div class="col-md-3">
               <label for="validationDefault05" class="form-label">contact number</label>
-              <input type="number" class="form-control" id="validationDefault05"  onChange={(e)=>setC(e.target.value)}/>
+              <input type="number" class="form-control" id="validationDefault05" required onChange={(e)=>setC(e.target.value)}/>
             </div>
             <div class="col-12">
               <div style={{display:'flex',flexDirection:'row'}}>
@@ -132,14 +132,14 @@ const Detail = () => {
                 </div>
                 <div>
                 {ch === '1' ?
-                  <p>$25.000</p>
+                  <p>£22,000</p>
                   : <div>
-                    {ch === '2' ? <p>$12.000</p> :
+                    {ch === '2' ? <p>£11,000</p> :
                       <div>{
-                        ch === '3' ?<p>$1.500</p>:
+                        ch === '3' ?<p>£1500</p>:
                         <div>
                           {
-                            ch === '4' ?<p>$700</p>:<p>$300</p>
+                            ch === '4' ?<p>£800</p>:<p>£300</p>
                           }
                         </div>
                     }
@@ -150,7 +150,7 @@ const Detail = () => {
               </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary"  onClick={()=>chang()} > Order now</button>
+              <button class="btn btn-primary"  onClick={()=>chang()}>Order now</button>
             </div>
           </form>
        
@@ -206,4 +206,4 @@ Copy link below 👇</p>
     </div>)
 }
 
-export default Detail
+export default DetailP
