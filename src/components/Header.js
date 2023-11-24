@@ -15,7 +15,7 @@ const Header = () => {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button></div>
   <div class="carousel-inner">
-    <div class="it4 carousel-item"  data-bs-interval="10000">
+    <div class="it4 carousel-item"  data-bs-interval="1000">
     <div class='cri'>
      <h1>Buy Conterfeit USD Online </h1>
      <h5>We offer AA grade Us dollar notes which pass through all vending machines </h5>
@@ -30,14 +30,14 @@ const Header = () => {
      <button class="btn btn-primary" onClick={()=>navigate('usdA')} >Order now</button> 
      </div>
     </div>
-    <div class="it2 carousel-item"  data-bs-interval="10000">
+    <div class="it2 carousel-item"  data-bs-interval="1000">
     <div class='cri'>
      <h1>Buy contrefeit EURO Online</h1>
      <h5>We offer AA grade Euro notes which pass through all vending machines </h5>
      <button class="btn btn-primary" onClick={()=>navigate('euro')} >Order now</button>   
      </div>
     </div>
-    <div class=" row it3 carousel-item"  data-bs-interval="10000">
+    <div class=" row it3 carousel-item"  data-bs-interval="1000">
     <div class='cri'>
      <h1>Buy contrefeit POUNDS STERLING Online</h1>
      <h5>We offer AA grade Pounds sterling notes which pass through all vending machines </h5>
