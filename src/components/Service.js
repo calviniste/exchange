@@ -31,7 +31,7 @@ const Services=()=>{
                         <p>{m.dsc}</p>
                         <a href=""
                         onClick={()=>change(m.image,m.name,m.dsc,m.route)}
-                        >Place order, then make payment <i class="fa fa-arrow-right ms-2"></i></a>
+                        >Place order,make payment <i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 )

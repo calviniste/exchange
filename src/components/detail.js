@@ -42,7 +42,7 @@ const Detail = () => {
   };
 
   return (
-    <div class="container-xxl py-5 bg-light">
+    <div class="container-xxl py-5 bg-white">
       <div class="container">
         <div class="row justify-content-beetwen col-12 ">
           <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.1s">
