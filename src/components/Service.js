@@ -1,6 +1,4 @@
-import strl from '../assets/img/sterling.png'
-import dol from '../assets/img/doll.jpg'
-import ero from '../assets/img/eur.jpg'
+
 import { MONEY } from '../const/money'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
