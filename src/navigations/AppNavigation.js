@@ -15,10 +15,13 @@ const AppNavigation = () => {
                 <Route path="" element={<Outlets />}>
                     <Route path="" element={<Home />} />
                     <Route path="about" element={<About />} />
-                    <Route path="service" element={<Services />} />
+                    <Route path="service" element={<Services />}>
+                        <Route path="buy" element={<Buy />} />
+                        <Route path="usd" element={<Detail />} />
+                    </Route>
                     <Route path="faq" element={<Faq />} />
-                    <Route path="buy" element={<Buy />} />
-                    <Route path="usd" element={<Detail />} />
+
+                   
                     <Route path="euro" element={<Buy />} />
                     <Route path="sterling" element={<Buy />} />
                 </Route>

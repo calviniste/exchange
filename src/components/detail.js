@@ -47,112 +47,113 @@ const Detail = () => {
 
         </div>
         <div class="container-xxl bg-light py-5 my-5">
-       
+
           <div class="container py-5">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: 500 }}>
               <h1 class="display-6">How to order</h1>
               <p class="text-primary fs-5 mb-5">How to place an order🚛🚚</p>
             </div>
             <form class="row">
-            <div class="col-md-4">
-              <label for="validationDefault01" class="form-label">Your country/city</label>
-              <input type="text" class="form-control" id="validationDefault01" required />
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Your name</label>
-              <input type="text" class="form-control" id="validationDefault02" required />
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefaultUsername" class="form-label">Required quantity
-              </label>
-              <div class="input-group">
-                <select class="form-select" onChange={(e) => setCh(e.target.value)}>
-                  <option value='1'>
-                    100.000 $
-                  </option>
-                  <option value='2'>
-                    50.000 $
-                  </option>
-                  <option value='3'>
-                    10.000 $
-                  </option>
-                  <option value='4'>
-                    5.000 $
-                  </option>
-                  <option value='5'>
-                    2.000 $
-                  </option>
-                </select>
-                {/* <input type="text" class="form-control" onChange={(e)=>setCh(e.target.value)} id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required/> */}
+              <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Your country/city</label>
+                <input type="text" class="form-control" id="validationDefault01" required />
               </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationDefault03" class="form-label">Delivery address details</label>
-              <input type="text" class="form-control" id="validationDefault03" required />
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">Delivery address details</label>
-              <input type="text" class="form-control" id="validationDefault05" required />
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault05" class="form-label">contact number</label>
-              <input type="number" class="form-control" id="validationDefault05" required />
-            </div>
-            <div class="col-12">
-              <div style={{display:'flex',flexDirection:'row'}}>
-                <div style={
-                  {marginRight:5}
-                }>
-                <p>cost</p>
+              <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="validationDefault02" required />
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Required quantity
+                </label>
+                <div class="input-group">
+                  <select class="form-select" onChange={(e) => setCh(e.target.value)}>
+                    <option value='1'>
+                      100.000 $
+                    </option>
+                    <option value='2'>
+                      50.000 $
+                    </option>
+                    <option value='3'>
+                      10.000 $
+                    </option>
+                    <option value='4'>
+                      5.000 $
+                    </option>
+                    <option value='5'>
+                      2.000 $
+                    </option>
+                  </select>
+                  {/* <input type="text" class="form-control" onChange={(e)=>setCh(e.target.value)} id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required/> */}
                 </div>
-                <div>
-                {ch === '1' ?
-                  <p>$25.000</p>
-                  : <div>
-                    {ch === '2' ? <p>$12.000</p> :
-                      <div>{
-                        ch === '3' ?<p>$1.500</p>:
-                        <div>
-                          {
-                            ch === '4' ?<p>$700</p>:<p>$300</p>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Delivery address details</label>
+                <input type="text" class="form-control" id="validationDefault03" required />
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Delivery address details</label>
+                <input type="text" class="form-control" id="validationDefault05" required />
+              </div>
+              <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">contact number</label>
+                <input type="number" class="form-control" id="validationDefault05" required />
+              </div>
+              <div class="col-12">
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
+                  <div style={
+                    { marginRight: 5 }
+                  }>
+                    <p>cost</p>
+                  </div>
+                  <div>
+                    {ch === '1' ?
+                      <p>$25.000</p>
+                      : <div>
+                        {ch === '2' ? <p>$12.000</p> :
+                          <div>{
+                            ch === '3' ? <p>$1.500</p> :
+                              <div>
+                                {
+                                  ch === '4' ? <p>$700</p> : <p>$300</p>
+                                }
+                              </div>
                           }
-                        </div>
+                          </div>}</div>
                     }
-                      </div>}</div>
-                }
+                  </div>
+
                 </div>
-                
               </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
-        <div class="row g-4 jutify-content-center">
-        <div class="row g-4 jutify-content-center" >
-        <h5 class="display-8 g-4">Keep it short guys, there are lots of clients waiting to be attended to okay. Thanks for the trust📦📦📦
-Payment method: Bitcoin or Ethereum
-Copy link below 👇</h5>
-</div>
-          <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-4" src={strl} alt=""/>
-                        <h5 class="mb-3">ETH</h5>
-                        <p>0x2eB3988628EB13af50a21cF38B
-                            F88028621dd3e5  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+            </form>
+            <div class="row g-4 jutify-content-center">
+              <div class="row g-4 jutify-content-center" >
+                <p style={{ textAlign: 'justify', fontWeight: 'normal' }}>Keep it short guys, there are lots of clients waiting to be attended to okay. Thanks for the trust📦📦📦
+                </p>
+                <p>Payment method: Bitcoin or Ethereum
+                  Copy link below 👇</p>
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-white p-5">
+                  <img class="img-fluid mb-4" src={strl} alt="" />
+                  <h5 class="mb-3">ETH</h5>
+                  <p>0x2eB3988628EB13af50a21cF38B
+                    F88028621dd3e5  </p>
+                  <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
                 </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white p-5">
-                        <img class="img-fluid mb-2" src={dol} alt=""/>
-                        <h5 class="mb-3">BTC</h5>
-                        <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
-                            32caa0w706vdd  </p>
-                        <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                    
+              </div>
+              <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item bg-white p-5">
+                  <img class="img-fluid mb-2" src={dol} alt="" />
+                  <h5 class="mb-3">BTC</h5>
+                  <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev
+                    32caa0w706vdd  </p>
+                  <a href="">copied <i class="fa fa-arrow-right ms-2"></i></a>
                 </div>
+
+              </div>
 
             </div>
           </div>
@@ -162,7 +163,7 @@ Copy link below 👇</h5>
 
 
 
-         
+
 
 
 

@@ -11,24 +11,15 @@ import Nav from "../components/nav.js"
 const Home = () => {
     return (
         <div>
-           
-          
-                <Header />
-            
-            <div id="about">
-                <About />
-            </div>
 
-            <div id="service">
-                <Services />
-            </div>
-            <div id="faq">
-                <Faq />
-            </div>
+
+            <Header />
+            <About />
+            <Services />
+            <Faq />
 
 
 
-        
         </div>
     )
 }
