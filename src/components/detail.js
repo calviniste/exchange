@@ -345,12 +345,13 @@ const Detail = () => {
                     <h5 class="mb-3">ETH</h5>
                     <p>0x2eB3988628EB13af50a21cF38B F88028621dd3e5 </p>
                     <a
-                      href=""
-                      onClick={() =>
+                      href="#"
+                      onClick={(e) =>{
+                        e.preventDefault();
                         copyTextToClipboard(
                           "0x2eB3988628EB13af50a21cF38BF88028621dd3e5"
                         )
-                      }
+                      }}
                     >
                       copied <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -365,15 +366,16 @@ const Detail = () => {
                     <h5 class="mb-3">BTC</h5>
                     <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev 32caa0w706vdd </p>
                     <a
-                      href=""
-                      onClick={() =>
-                        copyTextToClipboard(
-                          "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
-                        )
-                      }
-                    >
-                      copied <i class="fa fa-arrow-right ms-2"></i>
-                    </a>
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    copyTextToClipboard(
+      "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
+    );
+  }}
+>
+  copied <i class="fa fa-arrow-right ms-2"></i>
+</a>
                   </div>
                  
                 </div>

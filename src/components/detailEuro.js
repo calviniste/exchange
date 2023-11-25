@@ -5,7 +5,7 @@ import dol from '../../src/assets/img/btc-min.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
-import { Cost } from '../const/money';
+import { CostE } from '../const/money';
 const DetailEuro = () => {
   useEffect(() => {
     const wow = new WOW.WOW();
@@ -111,7 +111,7 @@ const DetailEuro = () => {
                   </th>
                 </tr>
 
-                {Cost.map((c) => (
+                {CostE.map((c) => (
                   <tr  style={{textAlign:'center'}}>
                     <th>
                       <div class="d-flex align-items-center mb-2">
@@ -345,12 +345,13 @@ const DetailEuro = () => {
                     <h5 class="mb-3">ETH</h5>
                     <p>0x2eB3988628EB13af50a21cF38B F88028621dd3e5 </p>
                     <a
-                      href=""
-                      onClick={() =>
+                      href="#"
+                      onClick={(e) =>{
+                        e.preventDefault();
                         copyTextToClipboard(
                           "0x2eB3988628EB13af50a21cF38BF88028621dd3e5"
                         )
-                      }
+                      }}
                     >
                       copied <i class="fa fa-arrow-right ms-2"></i>
                     </a>
@@ -365,15 +366,16 @@ const DetailEuro = () => {
                     <h5 class="mb-3">BTC</h5>
                     <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev 32caa0w706vdd </p>
                     <a
-                      href=""
-                      onClick={() =>
-                        copyTextToClipboard(
-                          "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
-                        )
-                      }
-                    >
-                      copied <i class="fa fa-arrow-right ms-2"></i>
-                    </a>
+  href="#"
+  onClick={(e) => {
+    e.preventDefault();
+    copyTextToClipboard(
+      "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
+    );
+  }}
+>
+  copied <i class="fa fa-arrow-right ms-2"></i>
+</a>
                   </div>
                 </div>
                 <h1 class="mb-3" >Make payment now</h1>
