@@ -19,7 +19,7 @@ const Header = () => {
     <div class='cri'>
      <h1>Buy Conterfeit USD Online </h1>
      <h5>We offer AA grade Us dollar notes which pass through all vending machines </h5>
-     <button class="btn btn-primary" onClick={()=>navigate('euro')}>Order now</button> 
+     <button class="btn btn-primary" onClick={()=>navigate('usd')}>Order now</button> 
      </div>
     </div>
     <div class="it1 carousel-item  active"  data-bs-interval="10000">

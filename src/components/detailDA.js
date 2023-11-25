@@ -54,15 +54,15 @@ const DetailDA = () => {
       <div class="container">
         <div class="row justify-content-beetwen col-12 ">
           <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.1s">
-            <img class="img-fluid" src={ab} alt="" />
+            <img class="idola img-fluid" src={ab} alt=""style={{ width: 700  }} />
           </div>
 
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100">
-              <h1 class="display-6">Us dollar</h1>
+              <h1 class="display-6">Australian dollar</h1>
               <p class="text-primary fs-5 mb-4">Description</p>
               <p>
-                Purchasing Us dollar tickets from propnotesetclone is a
+                Purchasing Australian dollar tickets from propnotesetclone is a
                 transparent and convenient process. Through our user-friendly
                 online platform, you can browse our selection, place your order
                 and enjoy the convenience of worldwide delivery.{" "}
@@ -263,7 +263,7 @@ const DetailDA = () => {
                 <div class="col-12">
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     <div style={{ marginRight: 5 }}>
-                      <p>cost</p>
+                    <p className="text-primary font-weight-bold">Cost</p>
                     </div>
                     <div>
                       {ch === "1" ? (
@@ -384,6 +384,28 @@ const DetailDA = () => {
                     </a>
                   </div>
                 </div>
+                <h1 class="mb-3" >Make payment now</h1>
+                <h5 class="mb-3">after copying the address use one of these links to make bitcoin payment</h5>
+                <a
+                      href="https://paybis.com"
+                    >
+                      Paybis <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                
+                <a
+                      href="https://Xcoins.Com"
+                >
+                      Xcoins<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                    <a
+                      href="https://Coinmama.conm"
+                    >
+                      Coinmama<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+              
+                    <p>When you contact me, please make sure your payment is ready Use Paybis.com to buy your bitcoins
+              And for people from Canada you can use  <a href="https://shakepay.com" > shakepay</a></p>
+              <p> Suggest if you have other options.</p>
               </div>
             </div>
           )}

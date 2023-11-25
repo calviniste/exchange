@@ -116,7 +116,7 @@ const Detail = () => {
                     <th>
                       <div class="d-flex align-items-center mb-2">
                         <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
-                        <span>{c.value}</span>
+                        <span >{c.value}</span>
                       </div>
                     </th>
                     <td style={{textAlign:'center'}}>
@@ -255,11 +255,11 @@ const Detail = () => {
                 <div class="col-12">
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     <div style={{ marginRight: 5 }}>
-                      <p>cost</p>
+                    <p className="text-primary font-weight-bold">Cost</p>
                     </div>
                     <div>
                       {ch === "1" ? (
-                        <p>$1.000</p>
+                        <p> $1.000</p>
                       ) : (
                         <div>
                           {ch === "2" ? (
@@ -293,7 +293,7 @@ const Detail = () => {
                                                       {ch === "b4" ? (
                                                         <p>$1000</p>
                                                       ) : (
-                                                        <p>$10k</p>
+                                                        <p>$10000</p>
                                                       )}
                                                     </div>
                                                   )}
@@ -375,7 +375,30 @@ const Detail = () => {
                       copied <i class="fa fa-arrow-right ms-2"></i>
                     </a>
                   </div>
+                 
                 </div>
+                <h1 class="mb-3" >Make payment now</h1>
+                <h5 class="mb-3">after copying the address use one of these links to make bitcoin payment</h5>
+                <a
+                      href="https://paybis.com"
+                    >
+                      Paybis <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                
+                <a
+                      href="https://Xcoins.Com"
+                >
+                      Xcoins<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                    <a
+                      href="https://Coinmama.conm"
+                    >
+                      Coinmama<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+              
+                    <p>When you contact me, please make sure your payment is ready Use Paybis.com to buy your bitcoins
+              And for people from Canada you can use  <a href="https://shakepay.com" > shakepay</a></p>
+              <p> Suggest if you have other options.</p>
               </div>
             </div>
           )}
