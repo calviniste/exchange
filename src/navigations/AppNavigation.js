@@ -12,6 +12,7 @@ import DetailEuro from "../components/detailEuro"
 import SOutlet from "../components/SOutlet"
 import DetailP from "../components/detailP"
 import DetailDA from "../components/detailDA"
+import Nav from "../components/nav.js"
 const AppNavigation = () => {
     return (
         <BrowserRouter>
@@ -21,11 +22,13 @@ const AppNavigation = () => {
                     <Route path="about" element={<About />} />
                     <Route path="service" element={<SOutlet />}>
                         <Route path="" element={<Services />} />
+                        <Route path="nav" element={<Nav />} ></Route>
                         <Route path="usdA" element={<DetailDA />} />
                         <Route path="usd" element={<Detail />} />
                         <Route path="euro" element={<DetailEuro />} />
                         <Route path="sterling" element={<DetailP />} />
                     </Route>
+                    
                     <Route path="faq" element={<Faq />} />
                     <Route path="usdA" element={<DetailDA />} />
                     <Route path="usd" element={<Detail />} />

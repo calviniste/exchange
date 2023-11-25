@@ -16,7 +16,9 @@ const Nav = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-light navbar-light sticky-top p-0 px-4 px-lg-5">
-        <a href="index.html" className="navbar-brand d-flex align-items-center">
+        <a href="" onClick={() => handleNavItemClick("")}
+              className={`nav-item nav-link ${
+                activeNavItem === "" ? "active" : ""}`} >
           <h2 className="m-0 text-primary">
             <img
               className="img-fluid me-2"
