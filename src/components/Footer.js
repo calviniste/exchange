@@ -13,10 +13,11 @@ const Footer = () => {
                 <div class="col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
                     <div class="position-relative">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email"/>
-                        <button type="button"
-                            class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <p class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="mail us now">mail us now</p>
+                       <button type="button" onClick={() => window.location.href = 'mailto:propnotesandclone@gmail.com'} class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">
+  <i class="fa fa-envelope"></i>
+</button>
                     </div>
                 </div>
                 
