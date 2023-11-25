@@ -40,10 +40,10 @@ const Footer = () => {
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4 ">Get In Touch</h5>
                     <div class="mb-6 d-flex">
-                        <a class="btn btn-square rounded-circle me-1 " href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="https://T.me/legitnotes101"><i class="fab fa-telegram"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href="https://wa.me/message/BTB6VMQ2TOOYK1"><i class="fab fa-whatsapp"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"><i class="fab fa-snapchat"></i></a>
-                        <a class="btn btn-square rounded-circle me-1" href="propnotesandclone@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <a class="btn btn-square rounded-circle me-1" href="mailto:propnotesandclone@gmail.com"><i class="fa fa-envelope"></i></a>
                         
                     </div>
                     
