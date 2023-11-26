@@ -31,7 +31,6 @@ const Footer = () => {
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Quick Links</h5>
                     <a class="btn btn-link" href="about" onClick={()=>navigate('about')} >About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
                     <a class="btn btn-link" href="service" onClick={()=>navigate('service')} >Services</a>
                     
                     

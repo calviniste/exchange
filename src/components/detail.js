@@ -18,7 +18,6 @@ const Detail = () => {
   const [name, setName] = useState("");
   const [deli, setDeli] = useState("");
   const [qua, setQua] = useState("");
-  const [c, setC] = useState("");
 
   const copyTextToClipboard = (text) => {
     const textarea = document.createElement("textarea");
@@ -34,8 +33,7 @@ const Detail = () => {
       city.length >= 1 &&
       name.length >= 1 &&
       deli.length >= 1 &&
-      qua.length >= 1 &&
-      c.length >= 1
+      qua.length >= 1 
     ) {
       setShow(false);
     }
@@ -161,7 +159,7 @@ const Detail = () => {
               <form class="row">
                 <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">
-                    Your country/city
+                    Your city
                   </label>
                   <input
                     type="text"
@@ -231,25 +229,15 @@ const Detail = () => {
                 </div>
                 <div class="col-md-3">
                   <label for="validationDefault04" class="form-label">
-                    E.mail
+                    Preferred contact
                   </label>
                   <input
                     type="text"
                     class="form-control"
+                    placeholder='E.mail / number'
                     id="validationDefault05"
                     required
                     onChange={(e) => setQua(e.target.value)}
-                  />
-                </div>
-                <div class="col-md-3">
-                  <label for="validationDefault05" class="form-label">
-                    contact number
-                  </label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="validationDefault05"
-                    onChange={(e) => setC(e.target.value)}
                   />
                 </div>
                 <div class="col-12">
@@ -397,12 +385,32 @@ const Detail = () => {
                     >
                       Coinmama<i class="fa fa-arrow-right ms-2"></i>
                     </a>
+                    <a
+                      href=" https://Coinspot.com.au"
+                    >
+                      Coinspot<i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                   
+                    <p> Contact here for all other payments : other accepted payments are cardless cash, PayPal and steam gift cards exceptionally. Contact us on telegram or Snapchat or through the email for payments .</p>
+                    
+              <a
+                
+                href="https://T.me/legitnotes101"
+               >
+                <i className="fab fa-telegram"></i> telegram
+               </a>
+               <a
+               className="mb-4 me-0"
+               href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"
+               >
+               <i className="fab fa-snapchat"></i> snapchat
+                </a>
+                <p>For package drops to specific positions , contact us on any of our contacts below and send photo of exact drop position. </p>
+               <p>After you place order, you will receive ETA in less than 5 minutes . Thanks</p>
+               </div>
               
-                    <p>When you contact me, please make sure your payment is ready Use Paybis.com to buy your bitcoins
-              And for people from Canada you can use  <a href="https://shakepay.com" > shakepay</a></p>
-              <p> Suggest if you have other options.</p>
               </div>
-            </div>
+           
           )}
         </div>
         <div class="row g-5 align-items-center"></div>
