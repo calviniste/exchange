@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ab from '../assets/img/téléchargement-min.jpeg'
+import ab from '../assets/img/NewDol.jpg'
 import strl from '../../src/assets/img/eth-min.jpg'
 import dol from '../../src/assets/img/btc-min.jpg'
 import WOW from 'wowjs';
@@ -52,7 +52,7 @@ const DetailDA = () => {
       <div class="container">
         <div class="row justify-content-beetwen col-12 ">
           <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.1s">
-            <img class="idola img-fluid" src={ab} alt=""style={{ width: 700  }} />
+            <img class="idola img-fluid" src={ab} alt=""style={{ width: 500 ,height:320 }} />
           </div>
 
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

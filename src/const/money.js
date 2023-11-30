@@ -1,5 +1,5 @@
 import usd from '../assets/img/doll-min.jpg'
-import usdC from '../assets/img/téléchargement-min.jpeg'
+import usdC from '../assets/img/NewDol.jpg'
 import euro from '../assets/img/eur-min.jpg'
 import strl from '../assets/img/sterling.png'
 
