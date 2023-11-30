@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ab from '../assets/img/NewDol.jpg'
+import ab from '../assets/img/b.png'
 import strl from '../../src/assets/img/eth-min.jpg'
 import dol from '../../src/assets/img/btc-min.jpg'
 import WOW from 'wowjs';
