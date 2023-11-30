@@ -16,11 +16,11 @@ const AboutV = () => {
     <div class="container-xxl py-5">
       <div class="container ">
         <div class="row g-5 align-items-center">
-          <div class="col-lg-6 wow vd fadeInUp" data-wow-delay="0.1s">
-           <video src={vd} controls></video>
-          </div>
+        <div class="col-lg-6 wow vd fadeInUp" data-wow-delay="0.5s">
+  <video src={vd}controls muted disablePictureInPicture ></video>
+</div>  
           <div class="col-lg-6 wow vd fadeInUp" data-wow-delay="0.5s">
-          <video src={vd2} controls></video>
+          <video src={vd2} controls muted disablePictureInPicture> </video>
           </div>
         </div>
       </div>

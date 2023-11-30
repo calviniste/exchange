@@ -5,7 +5,13 @@
     --light: #F2F8FE;
     --dark: #111111;
 }
-
+video::-webkit-media-controls-volume-slider {
+    pointer-events: none;
+  }
+  
+  video::-webkit-media-controls-mute-button {
+    pointer-events: none;
+  }
 .it1{
     background-image: url("../../assets/img/b.png");
     height: 80vh;
