@@ -6,6 +6,7 @@ import Menu from "./Menu"
 import About from "./About"
 import Services from "../components/Service"
 import Faq from "../components/Faq"
+import AboutV from "./AboutV"
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
 
 
             <Header />
+            <AboutV />
             <About />
             <Services />
             <Faq />

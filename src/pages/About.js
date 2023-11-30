@@ -3,7 +3,9 @@ import ab from '../assets/img/machine-min.jpg'
 import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
+
 const About = () => {
+
   useEffect(() => {
     const wow = new WOW.WOW();
     wow.init();
