@@ -280,7 +280,7 @@ const DetailEuro = () => {
                   <input
                     type="email"
                     class="form-control"
-                    placeholder='E.mail'
+                    placeholder='E.mail /number'
                     id="validationDefault05"
                     name='to_contact'
                     required

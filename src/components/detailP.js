@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ab from '../assets/img/sterling.png'
 import strl from '../../src/assets/img/eth-min.jpg'
 import dol from '../../src/assets/img/btc-min.jpg'
@@ -6,7 +6,40 @@ import WOW from 'wowjs';
 import '../styles/lib/animate/animate.min.css'
 import '../styles/lib/owlcarousel/assets/owl.carousel.min.css'
 import { CostP } from '../const/money';
+import emailjs from '@emailjs/browser';
 const DetailP = () => {
+  const form = useRef();
+  const [nom, setNom] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  function convertObjectToForm(obj) {
+    const form = document.createElement('form');
+    
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        const input = document.createElement('input');
+        input.setAttribute('name', key);
+        input.setAttribute('value', obj[key]);
+        form.appendChild(input);
+      }
+    }
+    
+    return form;
+  }
+ 
+
+  const sendEmail = () => {
+    
+
+    emailjs.sendForm('service_3pz6erf', 'template_642zvc9', formElement, 'rXgHe9ZFP8wy8VFjO')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
+
   useEffect(() => {
     const wow = new WOW.WOW();
     wow.init();
@@ -18,8 +51,15 @@ const DetailP = () => {
   const [name, setName] = useState("");
   const [deli, setDeli] = useState("");
   const [qua, setQua] = useState("");
-  
 
+  const comm={
+      to_name: nom,
+      to_contact: email,
+      to_quantity: ch,
+      to_address: deli,
+      to_city:city
+  }
+  const formElement = convertObjectToForm(comm);
   const copyTextToClipboard = (text) => {
     const textarea = document.createElement("textarea");
     textarea.value = text;
@@ -32,11 +72,11 @@ const DetailP = () => {
   const chang = () => {
     if (
       city.length >= 1 &&
-      name.length >= 1 &&
-      deli.length >= 1 &&
-      qua.length >= 1
+      
+      deli.length >= 1 
      
     ) {
+      sendEmail()
       setShow(false);
     }
   };
@@ -112,14 +152,14 @@ const DetailP = () => {
                 </tr>
 
                 {CostP.map((c) => (
-                  <tr  style={{textAlign:'center'}}>
+                  <tr style={{ textAlign: 'center' }}>
                     <th>
                       <div class="d-flex align-items-center mb-2">
                         <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
                         <span>{c.value}</span>
                       </div>
                     </th>
-                    <td style={{textAlign:'center'}}>
+                    <td style={{ textAlign: 'center' }}>
                       <div class="d-flex align-items-center mb-2">
                         <i class="fa fa-check bg-light text-primary btn-sm-square rounded-circle me-1 fw-bold"></i>
                         <span>{c.val}</span>
@@ -158,7 +198,7 @@ const DetailP = () => {
                   team drives to your desired location with package
                 </p>
               </div>
-              <form class="row">
+              <form class="row" >
                 <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">
                     Your city
@@ -168,6 +208,7 @@ const DetailP = () => {
                     class="form-control"
                     id="validationDefault01"
                     onChange={(e) => setCity(e.target.value)}
+                    name='to_city'
                   />
                 </div>
                 <div class="col-md-4">
@@ -178,7 +219,8 @@ const DetailP = () => {
                     type="text"
                     class="form-control"
                     id="validationDefault02"
-                    onChange={(e) => setName(e.target.value)}
+                    onChange={(e) => setNom(e.target.value)}
+                    name='to_name'
                   />
                 </div>
                 <div class="col-md-4">
@@ -227,6 +269,7 @@ const DetailP = () => {
                     id="validationDefault03"
                     required
                     onChange={(e) => setDeli(e.target.value)}
+                    name='to_address'
                   />
                 </div>
                 <div class="col-md-3">
@@ -234,22 +277,22 @@ const DetailP = () => {
                     Preferred contact
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
-                    placeholder='E.mail / number'
+                    placeholder='E.mail /number'
                     id="validationDefault05"
+                    name='to_contact'
                     required
-                    onChange={(e) => setQua(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-               
                 <div class="col-12">
                   <div style={{ display: "flex", flexDirection: "row" }}>
                     <div style={{ marginRight: 5 }}>
-                    <p className="text-primary font-weight-bold">Cost</p>
+                      <p className="text-primary font-weight-bold">Cost</p>
                     </div>
                     <div>
-                      {ch === "1" ? (
+                    {ch === "1" ? (
                         <p>£1.000</p>
                       ) : (
                         <div>
@@ -306,10 +349,8 @@ const DetailP = () => {
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" onClick={() => chang()}>
-                    {" "}
-                    Order now
-                  </button>
+                  <input class="btn btn-primary" type='button'  value='Order now' onClick={() => chang()} />
+
                 </div>
               </form>
             </div>
@@ -337,7 +378,7 @@ const DetailP = () => {
                     <p>0x2eB3988628EB13af50a21cF38B F88028621dd3e5 </p>
                     <a
                       href="#"
-                      onClick={(e) =>{
+                      onClick={(e) => {
                         e.preventDefault();
                         copyTextToClipboard(
                           "0x2eB3988628EB13af50a21cF38BF88028621dd3e5"
@@ -357,61 +398,62 @@ const DetailP = () => {
                     <h5 class="mb-3">BTC</h5>
                     <p>bc1q2u4uv9jtwqqaycdr3uy0h3uev 32caa0w706vdd </p>
                     <a
-  href="#"
-  onClick={(e) => {
-    e.preventDefault();
-    copyTextToClipboard(
-      "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
-    );
-  }}
->
-  copied <i class="fa fa-arrow-right ms-2"></i>
-</a>
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        copyTextToClipboard(
+                          "bc1q2u4uv9jtwqqaycdr3uy0h3uev32caa0w706vdd"
+                        );
+                      }}
+                    >
+                      copied <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                   </div>
-              </div>
+                </div>
                 <h1 class="mb-3" >Make payment now</h1>
                 <h5 class="mb-3">after copying the address use one of these links to make bitcoin payment</h5>
                 <a
-                      href="https://paybis.com"
-                    >
-                      Paybis <i class="fa fa-arrow-right ms-2"></i>
-                    </a>
-                
-                <a
-                      href="https://Xcoins.Com"
+                  href="https://paybis.com"
                 >
-                      Xcoins<i class="fa fa-arrow-right ms-2"></i>
-                    </a>
-                    <a
-                      href="https://Coinmama.conm"
-                    >
-                      Coinmama<i class="fa fa-arrow-right ms-2"></i>
-                    </a>
-                    <a
-                      href=" https://Coinspot.com.au"
-                    >
-                      Coinspot<i class="fa fa-arrow-right ms-2"></i>
-                    </a>
-              
-                <p> Contact here for all other payments : other accepted payments are cardless cash, PayPal and steam gift cards exceptionally. Contact us on telegram or Snapchat or through the email for payments .</p>
-              
-               <a
-                
-                href="https://T.me/legitnotes101"
-               >
-                <i className="fab fa-telegram"></i> telegram
-               </a>
-               <a
-               className="mb-4 me-0"
-               href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"
-               >
-               <i className="fab fa-snapchat"></i> snapchat
+                  Paybis <i class="fa fa-arrow-right ms-2"></i>
                 </a>
-               </div>
-               <p>For package drops to specific positions , contact us on any of our contacts below and send photo of exact drop position. </p>
-               <p>After you place order, you will receive ETA in less than 5 minutes . Thanks</p>
+
+                <a
+                  href="https://Xcoins.Com"
+                >
+                  Xcoins<i class="fa fa-arrow-right ms-2"></i>
+                </a>
+                <a
+                  href="https://Coinmama.conm"
+                >
+                  Coinmama<i class="fa fa-arrow-right ms-2"></i>
+                </a>
+                <a
+                  href=" https://Coinspot.com.au"
+                >
+                  Coinspot<i class="fa fa-arrow-right ms-2"></i>
+                </a>
+
+
+                <p> Contact here for all other payments : other accepted payments are cardless cash, PayPal and steam gift cards exceptionally. Contact us on telegram or Snapchat or through the email for payments .</p>
+
+                <a
+
+                  href="https://T.me/legitnotes101"
+                >
+                  <i className="fab fa-telegram"></i> telegram
+                </a>
+                <a
+                  className="mb-4 me-0"
+                  href="https://www.snapchat.com/add/arkiez?share_id=QprYLNgosI0&locale=en-US"
+                >
+                  <i className="fab fa-snapchat"></i> snapchat
+                </a>
               </div>
-           
+              <p>For package drops to specific positions , contact us on any of our contacts below and send photo of exact drop position. </p>
+              <p>After you place order, you will receive ETA in less than 5 minutes . Thanks</p>
+            </div>
+
           )}
         </div>
         <div class="row g-5 align-items-center"></div>
